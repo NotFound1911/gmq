@@ -1,0 +1,8 @@
+services:
+  prometheus:
+    container_name: prometheus_gmq
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
